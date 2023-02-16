@@ -259,7 +259,7 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
+/* Historic Section */
 #historic .historic {
 	flex-direction: column;
 	text-align: center;
@@ -271,7 +271,7 @@ p {
 	max-width: 500px;
 	margin: 0 auto;
 }
-/* End Services Section */
+/* End Historic Section */
 
 /* Projects section */
 #projects .projects {
