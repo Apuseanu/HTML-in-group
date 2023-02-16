@@ -35,6 +35,32 @@
 
   <!-- Hero Section  -->
   <section id="hero">
+    <div alt="Slider">                 
+      <img class="mySlides" src="fete_colac.png" id="prima">
+     
+     
+          <img class="mySlides" src="copii_veseli.png" id="trei">
+      
+    
+      <img class="mySlides" src="img\Slider\doi.png" id="doi">
+    </div>             
+    <script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+      x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 4000); 
+    }
+    </script>   
+</div>
     <div class="hero container">
       <div>
         <h1>Gimnaziul <span></span></h1>
@@ -50,7 +76,7 @@
     <div class="historic container">
       <div class="historic-top">
         <h1 class="section-title">Istoricul <span>liceului</span></h1>
-        <p>La 15 august 1944 și-a început activitatea școala feroviară ruso-moldovenească nr. 57
+        <p id="Line">La 15 august 1944 și-a început activitatea școala feroviară ruso-moldovenească nr. 57
             Primul director a fost Gavrilov Ion Semion. La 15 noiembrie 1953 școala a fost divizată 
             în 2 școli independente: școala nr. 57 rusă și școala nr. 71 moldovenească. Director al 
             școlii feroviare nr. 71 a fost Dubceac Boris. În 1953 școala este dislocată într-un bloc 
