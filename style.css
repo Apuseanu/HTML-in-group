@@ -257,7 +257,14 @@ p {
 	animation-delay: 2.5s;
 }
 #Line{
-	border-left: 25px solid rgb(201, 180, 109);
+	border-left: 5px solid rgb(201, 180, 109);
+	border-right: 5px solid rgb(201, 180, 109);
+	height: 550px;
+	width: 800px;
+}
+
+.mySlides{
+	display: none;
 }
 /* End Hero Section */
 
