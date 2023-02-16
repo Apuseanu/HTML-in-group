@@ -258,9 +258,11 @@ p {
 }
 #Line{
 	border-left: 20px solid rgb(201, 180, 109);
+	border-right: 20px solid rgb(201, 180, 109);
 }
-#index_back{
-	z-index: -1;
+
+.mySlides{
+	display: none;
 }
 /* End Hero Section */
 
