@@ -257,7 +257,10 @@ p {
 	animation-delay: 2.5s;
 }
 #Line{
-	border-left: 25px solid rgb(201, 180, 109);
+	border-left: 20px solid rgb(201, 180, 109);
+}
+#index_back{
+	z-index: -1;
 }
 /* End Hero Section */
 
