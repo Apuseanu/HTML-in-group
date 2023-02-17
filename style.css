@@ -256,13 +256,6 @@ p {
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
-#Line{
-	border-left: 5px solid rgb(201, 180, 109);
-	border-right: 5px solid rgb(201, 180, 109);
-	height: 550px;
-	width: 800px;
-}
-
 .mySlides{
 	display: none;
 }
@@ -279,6 +272,12 @@ p {
 #historic .historic-top {
 	max-width: 500px;
 	margin: 0 auto;
+}
+#Line{
+	border-left: 5px solid rgb(201, 180, 109);
+	border-right: 5px solid rgb(201, 180, 109);
+	height: 550px;
+	width: 800px;
 }
 /* End Historic Section */
 
@@ -300,7 +299,7 @@ p {
 	align-items: left;
 	justify-content: center;
 	flex-direction: column;
-	width: 80%;
+	width: 60%;
 	margin: 20px auto;
 	overflow: hidden;
 }
@@ -312,17 +311,19 @@ p {
 	background-color: #29323c;
 	border-radius: 20px;
 	opacity: 70%;
-	text-align: left;
+	/*text-align: left;*/
 }
 #projects .project-info p {
 	color: rgb(255, 255, 255);
+	font-size: 22px;
+	text-align: center;
 }
 
 /* End Projects section */
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #2e3031 0%, #3d444d 100%);
 }
 #footer .footer{
     min-height: 200px;
@@ -331,7 +332,6 @@ p {
 	padding-bottom: 10px;
 
 }
-
 #footer .container {
     min-height: 200px;
 	flex-direction: row;
@@ -345,17 +345,12 @@ p {
     margin-top: 0px;
 
 }
-
 #footer a {
     font-size: 20px;
 	color: rgb(201, 180, 109);
 	padding: 20px;
     margin: 0 5px;
 }
-
-
-
-
 /* End Footer */
 
 /* Keyframes */
