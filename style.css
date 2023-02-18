@@ -288,38 +288,53 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 }
+#projects .projects-content {
+	min-height: 60vh;
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 #projects .projects-header h1 {
 	margin-bottom: 50px;
-}
-#projects .all-projects {
-	justify-content: center;
-	flex-direction: column;
-}
-#projects .project-item {
-	align-items: left;
-	justify-content: center;
-	flex-direction: column;
-	width: 60%;
-	margin: 20px auto;
-	overflow: hidden;
 }
 #projects .project-info {
 	padding: 60px;
 	flex-basis: 80%;
-	height: 200%;
 	flex-direction: column;
-	background-color: #29323c;
+	background-color: #252728;
 	border-radius: 20px;
-	opacity: 70%;
-	/*text-align: left;*/
+	opacity: 60%;
 }
 #projects .project-info p {
 	color: rgb(255, 255, 255);
 	font-size: 22px;
 	text-align: center;
 }
-
 /* End Projects section */
+
+/*Message*/
+#message .message {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#message .message-top h1 {
+	margin-bottom: 100px;
+}
+#decoration {
+	border-left: 2px solid #c9b46d;
+	border-right: 2px solid #c9b46d;
+	height: 150px;
+	width: 800px;
+}
+/*End Massage*/
+
+/*Slider*/
+
+/*End Slider*/
 
 /* Footer */
 #footer {
