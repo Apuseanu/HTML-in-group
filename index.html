@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="emblema_no_bg.png">
   <title>Gimnaziul Alexandru Ioan Cuza</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
@@ -39,11 +40,7 @@
       <img class="mySlides" src="fete_colac.png" id="prima">
      
           <img class="mySlides" src="copii_veseli.png" id="trei">
-      
-      
-    
-    
-    
+        
       <img class="mySlides" src="profesori_foto.png" id="doi">
     </div>             
     <script>
@@ -139,7 +136,91 @@
  <!-- End Message Section -->
 
 <!-- Slider Section -->
- 
+<div class="body-content">
+  <div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="slider">
+      <img src="fete_colac.png" alt="img" draggable="false">
+      <img src="elevi_diplome.png" alt="img" draggable="false">
+      <img src="buna_seara.png" alt="img" draggable="false">
+      <img src="balul_frunzelor.png" alt="img" draggable="false">
+      <img src="activitate_eminescu.png" alt="img" draggable="false">
+      <img src="profesori_clasa.png" alt="img" draggable="false">
+      <img src="tvc_matematic.png" alt="img" draggable="false">
+      <img src="9_mai.png" alt="img" draggable="false">
+      <img src="ansamblu_popular.png" alt="img" draggable="false">
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+</div>
+<script>
+const slider = document.querySelector(".slider"),
+firstImg = slider.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".wrapper i");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHideIcons = () => {
+let scrollWidth = slider.scrollWidth - slider.clientWidth;
+arrowIcons[0].style.display = slider.scrollLeft == 0 ? "none" : "block";
+arrowIcons[1].style.display = slider.scrollLeft == scrollWidth ? "none" : "block";
+}
+
+arrowIcons.forEach(icon => {
+icon.addEventListener("click", () => {
+    let firstImgWidth = firstImg.clientWidth + 14; 
+    slider.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+    setTimeout(() => showHideIcons(), 60);
+});
+});
+
+const autoSlide = () => {
+if(slider.scrollLeft - (slider.scrollWidth - slider.clientWidth) > -1 || slider.scrollLeft <= 0) return;
+
+positionDiff = Math.abs(positionDiff); 
+let firstImgWidth = firstImg.clientWidth + 14;
+let valDifference = firstImgWidth - positionDiff;
+
+if(slider.scrollLeft > prevScrollLeft) { 
+    return slider.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+slider.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStart = (e) => {
+isDragStart = true;
+prevPageX = e.pageX || e.touches[0].pageX;
+prevScrollLeft = slider.scrollLeft;
+}
+
+const dragging = (e) => {
+if(!isDragStart) return;
+e.preventDefault();
+isDragging = true;
+slider.classList.add("dragging");
+positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+slider.scrollLeft = prevScrollLeft - positionDiff;
+showHideIcons();
+}
+
+const dragStop = () => {
+isDragStart = false;
+slider.classList.remove("dragging");
+
+if(!isDragging) return;
+isDragging = false;
+autoSlide();
+}
+
+slider.addEventListener("mousedown", dragStart);
+slider.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+slider.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+slider.addEventListener("touchend", dragStop);
+</script>
  <!-- Slider Section -->
 
   <!-- Footer -->
