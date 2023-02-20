@@ -260,8 +260,29 @@ p {
 .mySlides{
 	display: none;
 }
-
-
+#index_back{
+	position: absolute;
+	z-index: 1;
+}
+#txt{
+	position: absolute;
+	z-index: 2;
+}
+#prima{
+	width: 1855px;
+	height: 955px;
+	filter: blur(2px);  
+}
+#doi{
+	width: 1855px;
+	height: 955px;
+	filter: blur(2px);
+}
+#trei{
+	width: 1855px;
+	height: 955px;
+	filter: blur(2px);
+}
 /* End Hero Section */
 
 /* Historic Section */
