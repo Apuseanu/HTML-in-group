@@ -199,7 +199,7 @@ p {
 
 	background-size: cover;
 	background-position: top center;
-	position: absolute;
+	position: relative;
 	z-index: 1;
 }
 #hero::after {
@@ -260,10 +260,8 @@ p {
 .mySlides{
 	display: none;
 }
-#index_back{
-	position: absolute;
-	z-index: 2;
-}
+
+
 /* End Hero Section */
 
 /* Historic Section */
