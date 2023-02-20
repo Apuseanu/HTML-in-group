@@ -260,6 +260,36 @@ p {
 .mySlides{
 	display: none;
 }
+#index_back{
+	position: absolute;
+	z-index: 1;
+}
+#txt{
+	position: absolute;
+	z-index: 2;
+}
+.gold{
+	background-color: #c9b36d96;
+}
+.white{
+	background-color: #00000094;
+}
+
+#prima{
+	width: 1855px;
+	height: 955px;
+	filter: blur(2px);  
+}
+#doi{
+	width: 1855px;
+	height: 955px;
+	filter: blur(1px);
+}
+#trei{
+	width: 1855px;
+	height: 955px;
+	filter: blur(1px);
+}
 /* End Hero Section */
 
 /* Historic Section */
