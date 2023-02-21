@@ -207,6 +207,10 @@ table{
 	margin-top: 390px;
 	margin-left: -360px;
 }
+th{
+	font-weight: lighter;
+}
+
 #schedule .schedule-content {
 	min-height: 60vh;
 	width: 95%;
@@ -364,3 +368,9 @@ table{
 	}
 }
 /* End  Media Query For Desktop */
+
+/* Primary school */
+#primary{
+	height: 500px;
+	width: auto;
+}
