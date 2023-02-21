@@ -35,6 +35,7 @@ p {
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
+	float: top;
 }
 .section-title span {
 	color: rgb(201, 180, 109);
@@ -361,4 +362,6 @@ p {
 table{
 	font-size: 20px;
 	color: red;
+	margin-top: 300px;
+	margin-left: -300px;
 }
