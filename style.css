@@ -354,12 +354,15 @@ p {
 }
 #message .message-top h1 {
 	margin-bottom: 100px;
-}
-#decoration {
 	border-left: 2px solid #c9b46d;
 	border-right: 2px solid #c9b46d;
 	height: 150px;
 	width: 800px;
+	margin-left: 365px;
+}
+#message p{
+	font-size: 25px;
+	color: rgba(0, 0, 0, 0.87);
 }
 /*End Massage*/
 
