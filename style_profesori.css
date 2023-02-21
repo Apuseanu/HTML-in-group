@@ -194,6 +194,27 @@ p {
 }
 /* End Header section */
 
+#first{
+    background-color: white;
+    background-size: 500px 400px;
+    
+ 
+}
+#second{
+    background-color: rgb(201, 180, 109);
+    background-size: 300px;
+    
+}
+
+#third{
+    background-color: white;
+    background-size: 500px 400px;
+    
+}
+
+.transparent{
+    color: transparent;
+}
 
 
 /* Footer */
