@@ -360,8 +360,8 @@ p {
 /* End  Media Query For Desktop */
 
 table{
-	font-size: 20px;
-	color: red;
-	margin-top: 300px;
-	margin-left: -300px;
+	font-size: 40px;
+	letter-spacing: 3px;
+	margin-top: 420px;
+	margin-left: -410px;
 }
