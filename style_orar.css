@@ -357,3 +357,7 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+table{
+	font-size: 20px;
+}
