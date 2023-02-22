@@ -234,13 +234,14 @@ th{
  writing-mode: vertical-lr;
  text-orientation: upright;
  color: #c9b46d;
- font-size: 30px;
+ font-size: 60px;
  text-transform: uppercase;
  text-align: left;
  margin-left: 60px;
 }
 #class .primare{
 	display: flex;
+	padding: 10px;
 }
 #class button{
 	background-color: #c9b46d;
@@ -248,9 +249,20 @@ th{
 	border: none;
 	border-radius: 5px;
 	font-family: 'Montserrat', sans-serif;
+	padding: 15px 30px;
+	font-size: 20px;
 }
+
+button{
+	color: black; 
+  }
+  
+button:hover {
+	color: white;
+}
+  
 #class .prime{
-	
+	padding: 20px;
 }
 /*End Class Schedule*/
   
