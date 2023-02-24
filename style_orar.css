@@ -195,34 +195,18 @@ p {
 
 /*Schedule*/
 #schedule .schedule-content {
-	height: 65vh;
-	width: 95%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: column;
-}
-#schedule .schedule-top{
+	height: 50vh;
+	margin-top: 200px;
 	text-align: center;
 }
-#schedule .section-title{
-text-align: center;
-}
 ol{
-	align-items: center;
-}
-/*table{
-	font-size: 35px;
-	letter-spacing: 3px;
-	margin-top: 390px;
-	margin-left: -450px;
-}*/
-th{
-	font-weight: lighter;
-}
-.primary{
-	width: auto;
-	padding: 70px;
+	text-align: left;
+	display: inline-block;
+	font-size: 30px;
+	color: #2e3031;
+	text-indent: 5px;
+	padding-top: 20px;
+    font-weight: lighter;
 }
 
 /*End Schedule*/
@@ -230,6 +214,7 @@ th{
 /*Class Schedule*/
 #class .class-content {
 	margin-top: 50px;
+	padding-bottom: 60px;
 }
 #class h3{
 	color: #3b424bc7;
@@ -250,7 +235,12 @@ th{
 #class .primare{
 	display: flex;
 	padding-left: 100px;
-	padding-top: 50px;
+}
+#class .primare-class{
+	padding-top: 90px;
+}
+#class .gimn-class{
+	padding-top: 20px;
 }
 #class button{
 	background-color: #c9b46d;
@@ -260,7 +250,7 @@ th{
 	font-family: 'Montserrat', sans-serif;
 	padding: 15px 30px;
 	font-size: 20px;
-	width: 220px;
+	width: 230px;
 }
 
 button{
@@ -274,6 +264,10 @@ button:hover {
 #class .prime{
 	padding-left: 20px;
 	padding-top: 50px;
+}
+#class .second{
+	padding-left: 20px;
+	padding-top: 70px;
 }
 /*End Class Schedule*/
   
