@@ -269,6 +269,79 @@ button:hover {
 	padding-left: 20px;
 	padding-top: 70px;
 }
+
+th{
+    font-size: 30px;
+	background-color: #c9b36dde;
+	border-radius: 5px;
+}
+td{
+	font-size: 20px;
+	text-align: center;
+	width: 400px;
+	padding-top: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 1300px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h4 {
+    margin: 0;
+	font-size: 20px;
+  }
+  
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+	width: 1300px;
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 /*End Class Schedule*/
   
 /* Footer */
