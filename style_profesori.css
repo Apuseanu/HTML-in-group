@@ -136,7 +136,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: rgb(201, 180, 109);
+	color: #c9b46d;
 }
 #header .hamburger {
 	height: 60px;
@@ -194,28 +194,56 @@ p {
 }
 /* End Header section */
 
-#first{
-    background-color: white;
-    background-size: 500px 400px;
-    
- 
-}
-#second{
-    background-color: rgb(201, 180, 109);
-    background-size: 300px;
-    
+section{
+	margin-top: 20vw;
+	padding: 10px;
 }
 
-#third{
-    background-color: white;
-    background-size: 500px 400px;
-    
+img{
+	
+	width: 45vh;
 }
 
-.transparent{
-    color: transparent;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+	font-size: 20px;
+  background-color: #c9b46d;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 /* Footer */
 #footer {
