@@ -188,17 +188,15 @@ a {
 #prof{
 	margin-top: 20vw;
 	padding: 10px;
+	height: 320vh;
 }
-
-#prof img{
-	
-	width: 45vh;
+h1, p{
+	padding-top: 30px;
 }
-
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 400px;
   perspective: 1000px;
 }
 
