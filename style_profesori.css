@@ -186,12 +186,22 @@ a {
 /* End Header section */
 
 #prof{
-	margin-top: 20vw;
+	margin-top: 10vw;
 	padding: 10px;
-	height: 320vh;
+	height: 330vh;
+}
+h2{
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #31302dd3;
+	font-weight: 400;
+	padding-bottom: 40px;
 }
 h1, p{
 	padding-top: 30px;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 .flip-card {
   background-color: transparent;
