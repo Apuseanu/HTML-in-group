@@ -196,16 +196,16 @@ p {
 /*Schedule*/
 #schedule .schedule-content {
 	height: 50vh;
-	margin-top: 200px;
+	margin-top: 22vh;
 	text-align: center;
 }
 ol{
 	text-align: left;
 	display: inline-block;
-	font-size: 30px;
+	font-size: 3vh;
 	color: #2e3031;
-	text-indent: 5px;
-	padding-top: 20px;
+	text-indent: 0.5vh;
+	padding-top: 2vh;
     font-weight: lighter;
 }
 
