@@ -213,44 +213,44 @@ ol{
 
 /*Class Schedule*/
 #class .class-content {
-	margin-top: 50px;
-	padding-bottom: 60px;
+	margin-top: 5vh;
+	padding-bottom: 6vh;
 }
 #class h3{
 	color: #3b424bc7;
 	text-align: left;
-	font-size: 40px;
-	margin-left: 60px;
-	padding: 30px;
+	font-size: 4vh;
+	margin-left: 6vh;
+	padding: 3vh;
 }
 #class h2{
  writing-mode: vertical-lr;
  text-orientation: upright;
  color: #c9b46d;
- font-size: 60px;
+ font-size: 6vh;
  text-transform: uppercase;
  text-align: left;
- margin-left: 60px;
+ margin-left: 6vh;
 }
 #class .primare{
 	display: flex;
 	padding-left: 100px;
 }
 #class .primare-class{
-	padding-top: 90px;
+	padding-top: 9vh;
 }
 #class .gimn-class{
-	padding-top: 20px;
+	padding-top: 2vh;
 }
 #class button{
 	background-color: #c9b46d;
 	cursor: pointer;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0.5vh;
 	font-family: 'Montserrat', sans-serif;
-	padding: 15px 30px;
-	font-size: 20px;
-	width: 230px;
+	padding: 1.5vh 3vh;
+	font-size: 2vh;
+	width: 23vh;
 }
 
 button{
