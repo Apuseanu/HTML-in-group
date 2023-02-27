@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contact.css">
+  <link rel="icon" href="emblema_no_bg.png">
+    <title>Date de contact</title>
+
+    <script>
+        function initComparisons() {
+          var x, i;
+          x = document.getElementsByClassName("img-comp-overlay");
+          for (i = 0; i < x.length; i++) {
+            compareImages(x[i]);
+          }
+          function compareImages(img) {
+            var slider, img, clicked = 0, w, h;
+            w = img.offsetWidth;
+            h = img.offsetHeight;
+            img.style.width = (w / 2) + "px";
+            slider = document.createElement("DIV");
+            slider.setAttribute("class", "img-comp-slider");
+            img.parentElement.insertBefore(slider, img);
+            slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+            slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+            slider.addEventListener("mousedown", slideReady);
+            window.addEventListener("mouseup", slideFinish);
+            slider.addEventListener("touchstart", slideReady);
+            window.addEventListener("touchend", slideFinish);
+            function slideReady(e) {
+              e.preventDefault();
+              clicked = 1;
+              window.addEventListener("mousemove", slideMove);
+              window.addEventListener("touchmove", slideMove);
+            }
+            function slideFinish() {
+              clicked = 0;
+            }
+            function slideMove(e) {
+              var pos;
+              if (clicked == 0) return false;
+              pos = getCursorPos(e)
+              if (pos < 0) pos = 0;
+              if (pos > w) pos = w;
+              slide(pos);
+            }
+            function getCursorPos(e) {
+              var a, x = 0;
+              e = (e.changedTouches) ? e.changedTouches[0] : e;
+              a = img.getBoundingClientRect();
+              x = e.pageX - a.left;
+              x = x - window.pageXOffset;
+              return x;
+            }
+            function slide(x) {
+              img.style.width = x + "px";
+              slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            }
+          }
+        }
+        </script>
+</head>
+<body>
+    <section>
+        <h1>Date de contact</h1>
+   <hr size="3" width="80%" color="rgba(201, 179, 109, 0.588)" align="left">
+        
+            <div class="cont">
+                <img src="phone.png" style="width: 50px; float: left;"> <a href="tel:023146424"><p style="float: left;">023 146 424</p> </a> 
+               </div> 
+               <div class="email">
+                <img src="email.png" style="width: 50px; float: left;"> <a href="mailto:l.cuza46@gmail.com" id="cuza"><i>l.cuza46@gmail.com</i></a>
+                </div>
+
+                <div class="facebook">
+                    <img src="facebook.png" style="width: 50px; float: left;"> <a href="https://www.facebook.com/gymnasium.cuza.balti/" target="_blank">
+                        <i id="face">Facebook</i>
+                    </a>
+                </div>
+
+       <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.4586465042088!2d27.929165401890298!3d47.77912695991535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb60c0981bcd75%3A0x5d3b5efb3294fbed!2z0JvQuNGG0LXQuSDihJYgMTg!5e0!3m2!1sru!2s!4v1677431634686!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div> 
+    </section>
+     
+    
+
+    <div class="mesaj" style="margin-top: 25%;">
+        <hr size="3" width="80%" color="rgba(201, 179, 109, 0.588)" align="left">
+       <h1>Trimite-ne un mesaj</h1>
+            <div class="form">
+        <form method="GET" action="mailto:l.cuza46@gmail.com" enctype="text/plain">
+            <div>Subiect</div>
+            <input type="text" name="subject" />
+        
+            <div>Nume</div>
+            <input name="Name" />
+        
+            <div>E-Mail</div>
+            <input name="E-Mail Address" />
+        
+            <div>Mesajul tău</div>
+            <textarea name="Message"></textarea>
+        
+            <br/>
+            <input type="submit" value="Send" />
+        
+            <input type="hidden" name="body" />
+        </form>
+        
+        <script>
+           var form = document.getElementsByTagName('form')[0];
+           form.addEventListener('submit',contact,false);
+           function contact(e) {
+              e.preventDefault();
+        
+              var target = e.target || e.srcElement;
+              var i = 0;
+              var message = '';
+        
+              for(i = 0; i < target.length; ++i) {
+                 if(target[i].type != 'text' && target[i].type != 'textarea') {
+                    continue;
+                 }
+        
+                 message += target[i].name + ': ' + target[i].value + "\r\n";
+              }
+              target.elements["body"].value = message;
+        
+              this.submit();
+           }
+        </script>
+    </div>
+
+    <div class="feeling">
+        <p>Care este acum dispoziția ta?</p>
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="bine.png" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="rau.png" width="300" height="200">
+  </div>
+</div>
+
+<script>
+initComparisons();
+</script>
+    </div>
+    </div>
+
+    <div class="vac">
+        <hr size="3" width="80%" color="rgba(201, 179, 109, 0.588)" align="left">
+       <h1>Până la următoarea vacanță a rămas: </h1>
+ <div class="vacation">
+
+    <p id="demo"></p>
+
+    <script>
+    var countDownDate = new Date("Mar 6, 2023 00:0:0").getTime();
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+        
+      var distance = countDownDate - now;
+        
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+ </div>
+ </div>
+</body>
+</html>
