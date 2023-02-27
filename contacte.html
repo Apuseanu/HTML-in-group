@@ -63,49 +63,71 @@
         </script>
 </head>
 <body>
-    <section>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+                <img src="emblema-removebg-preview.png" height="35%" width="35%">
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" target="_blank">Acasă</a></li>
+            <li><a href="profesori.html" target="_blank">Colectivul Didactic</a></li>
+            <li><a href="orar.html" target="_blank">Orar</a></li>
+            <li><a href="contacte.html" target="_blank">Contacte</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+    <section id="contact">
         <h1>Date de contact</h1>
-   <hr size="3" width="80%" color="rgba(201, 179, 109, 0.588)" align="left">
+   <hr size="3" width="80%" color="#c9b46d" >
         
             <div class="cont">
-                <img src="phone.png" style="width: 50px; float: left;"> <a href="tel:023146424"><p style="float: left;">023 146 424</p> </a> 
+                <img src="phone.png" style="width: 50px; float: left; padding-bottom: 20px;"> <a href="tel:023146424"><p style="float: left;">023 146 424</p> </a> 
                </div> 
                <div class="email">
-                <img src="email.png" style="width: 50px; float: left;"> <a href="mailto:l.cuza46@gmail.com" id="cuza"><i>l.cuza46@gmail.com</i></a>
+                <img src="email.png" style="width: 50px; float: left;padding-bottom: 20px;"> <a href="mailto:l.cuza46@gmail.com" id="cuza"><i>l.cuza46@gmail.com</i></a>
                 </div>
 
                 <div class="facebook">
-                    <img src="facebook.png" style="width: 50px; float: left;"> <a href="https://www.facebook.com/gymnasium.cuza.balti/" target="_blank">
+                    <img src="facebook.png" style="width: 50px; float: left;padding-bottom: 20px;"> <a href="https://www.facebook.com/gymnasium.cuza.balti/" target="_blank">
                         <i id="face">Facebook</i>
                     </a>
                 </div>
 
                 <div class="strada">
-                  <img src="strada.png" style="width: 50px; float: left;">   <i  style="margin-left: 5px;">Strada Cahul 46, Bălți, Молдова</i>
+                  <img src="strada.png" style="width: 50px; float: left;padding-bottom: 20px;">   <i  style="margin-left: 5px;">Strada Cahul 46, Bălți, Молдова</i>
               </div>
 
        <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.4586465042088!2d27.929165401890298!3d47.77912695991535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb60c0981bcd75%3A0x5d3b5efb3294fbed!2z0JvQuNGG0LXQuSDihJYgMTg!5e0!3m2!1sru!2s!4v1677431634686!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.4586465042088!2d27.929165401890298!3d47.77912695991535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb60c0981bcd75%3A0x5d3b5efb3294fbed!2z0JvQuNGG0LXQuSDihJYgMTg!5e0!3m2!1sru!2s!4v1677431634686!5m2!1sru!2s" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div> 
-    </section>
+   
      
     
 
     <div class="mesaj" style="margin-top: 25%;">
-        <hr size="3" width="80%" color="rgba(201, 179, 109, 0.588)" align="left">
+        <hr size="3" width="80%" color="#c9b46d">
        <h1>Trimite-ne un mesaj</h1>
             <div class="form">
-        <form method="GET" action="mailto:l.cuza46@gmail.com" enctype="text/plain">
-            <div>Subiect</div>
+        <form method="GET" action="mailto:l.cuza46@gmail.com" enctype="text/plain" >
+            <div style="font-size: 20px; padding-bottom: 5px;">Subiect</div>
             <input type="text" name="subject" />
         
-            <div>Nume</div>
+            <div style="font-size: 20px; padding-bottom: 5px;">Nume</div>
             <input name="Name" />
         
-            <div>E-Mail</div>
+            <div style="font-size: 20px; padding-bottom: 5px;">E-Mail</div>
             <input name="E-Mail Address" />
         
-            <div>Mesajul tău</div>
+            <div style="font-size: 20px; padding-bottom: 5px;">Mesajul tău</div>
             <textarea name="Message"></textarea>
         
             <br/>
@@ -157,8 +179,7 @@ initComparisons();
     </div>
 
     <div class="vac">
-        <hr size="3" width="80%" color="rgba(201, 179, 109, 0.588)" align="left">
-       <h1>Până la următoarea vacanță a rămas: </h1>
+       <h1 style="margin-top: 280px;">Până la următoarea vacanță a rămas: </h1>
  <div class="vacation">
 
     <p id="demo"></p>
@@ -188,5 +209,25 @@ initComparisons();
     </script>
  </div>
  </div>
+</section>
+ <!-- Footer -->
+ <section id="footer">
+  <div class="footer container">
+    <div class="brand">
+      <h2><span>Gimnaziul </span>Alexandru <span>Ioan </span>Cuza</h2>
+    </div>
+    <div class="container">
+          <span class="label">Urmăreşte-ne pe:</span>
+          <a href="https://www.facebook.com/gymnasium.cuza.balti/" target="_blank" rel="noopener">
+              <i class="icon-facebook2"></i>Facebook
+          </a>
+          <span class="label">Pentru Informații:</span>
+          <a href="tel:023146424">
+              <i class="icon-phone"></i>023 146 424
+          </a>
+          <a href="mailto:l.cuza46@gmail.com">l.cuza46@gmail.com</a>
+  </div>
+</section>
+<!-- End Footer -->
 </body>
 </html>

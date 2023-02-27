@@ -188,7 +188,7 @@ a {
 #prof{
 	margin-top: 10vw;
 	padding: 10px;
-	height: 330vh;
+	min-height: 330vh;
 }
 h2{
 	font-size: 60px;
@@ -249,7 +249,7 @@ h1, p{
 	background-image: linear-gradient(60deg, #2e3031 0%, #3d444d 100%);
 }
 #footer .footer{
-    height: 130px;
+    min-height: 130px;
 	flex-direction: column;
 	padding-top: 20px;
 	padding-bottom: 10px;
