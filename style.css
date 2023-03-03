@@ -138,7 +138,7 @@ p {
 #header .nav-list ul li:hover a {
 	color: rgb(201, 180, 109);
 }
-#header .hamburger {
+#header button{
 	height: 60px;
 	width: 60px;
 	display: inline-block;
@@ -153,7 +153,22 @@ p {
 	transform: scale(0.8);
 	margin-right: 20px;
 }
-#header .hamburger:after {
+/*#header .hamburger {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(0.8);
+	margin-right: 20px;
+}*/
+#header button:after {
 	position: absolute;
 	content: '';
 	height: 100%;
@@ -162,15 +177,15 @@ p {
 	border: 3px solid white;
 	animation: hamburger_puls 1s ease infinite;
 }
-#header .hamburger .bar {
+#header button .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
 	background-color: white;
 	z-index: -1;
 }
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
+#header button .bar::after,
+#header button .bar::before {
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -180,16 +195,16 @@ p {
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
-#header .hamburger .bar::after {
+#header button .bar::after {
 	top: 8px;
 }
-#header .hamburger .bar::before {
+#header button .bar::before {
 	bottom: 8px;
 }
-#header .hamburger.active .bar::before {
+#header button.active .bar::before {
 	bottom: 0;
 }
-#header .hamburger.active .bar::after {
+#header button.active .bar::after {
 	top: 0;
 }
 /* End Header section */
@@ -442,9 +457,9 @@ p {
 	margin-left: 0px;
   }
   
- /* @media screen and (max-width: 900px) {
+  @media screen and (min-width: 1200px) {
 	.slider img{
-	  width: calc(100% / 2);
+	  width: calc(100% / 3);
 	}
   }
   
@@ -452,7 +467,7 @@ p {
 	.slider img{
 	  width: 100%;
 	}
-  }*/
+  }
 
 /*End Slider*/
 
@@ -567,14 +582,13 @@ p {
 	/* End Project */
 
 
-
 }
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
-	#header .hamburger {
+	#header button {
 		display: none;
 	}
 	#header .nav-list ul {
