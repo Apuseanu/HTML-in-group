@@ -71,7 +71,7 @@
                 <img src="emblema-removebg-preview.png" height="35%" width="35%">
         </div>
         <div class="nav-list">
-          <div class="hamburger">
+         <div class="hamburger">
             <div class="bar"></div>
           </div>
           <ul>
@@ -87,23 +87,23 @@
   <!-- End Header -->
     <section id="contact">
         <h1>Date de contact</h1>
-   <hr size="3" width="80%" color="#c9b46d" >
+   <hr id="sl" size="3" width="80%" color="#c9b46d" >
         
             <div class="cont">
-                <img src="phone.png" style="width: 50px; float: left; padding-bottom: 20px;"> <a href="tel:023146424"><p style="float: left;">023 146 424</p> </a> 
+                <img src="contact/phone.png" style="width: 50px; float: left; padding-bottom: 20px;"> <a href="tel:023146424"><p style="float: left;">023 146 424</p> </a> 
                </div> 
                <div class="email">
-                <img src="email.png" style="width: 50px; float: left;padding-bottom: 20px;"> <a href="mailto:l.cuza46@gmail.com" id="cuza"><i>l.cuza46@gmail.com</i></a>
+                <img src="contact/email.png" style="width: 50px; float: left;padding-bottom: 20px;"> <a href="mailto:l.cuza46@gmail.com" id="cuza"><i>l.cuza46@gmail.com</i></a>
                 </div>
 
                 <div class="facebook">
-                    <img src="facebook.png" style="width: 50px; float: left;padding-bottom: 20px;"> <a href="https://www.facebook.com/gymnasium.cuza.balti/" target="_blank">
+                    <img src="contact/facebook.png" style="width: 50px; float: left;padding-bottom: 20px;"> <a href="https://www.facebook.com/gymnasium.cuza.balti/" target="_blank">
                         <i id="face">Facebook</i>
                     </a>
                 </div>
 
                 <div class="strada">
-                  <img src="strada.png" style="width: 50px; float: left;padding-bottom: 20px;">   <i  style="margin-left: 5px;">Strada Cahul 46, Bălți, Moldova</i>
+                  <img src="contact/strada.png" style="width: 50px; float: left;padding-bottom: 20px;">   <i  style="margin-left: 5px;">Strada Cahul 46, Bălți, Moldova</i>
               </div>
 
        <div class="map">
@@ -114,8 +114,8 @@
     
 
     <div class="mesaj" style="margin-top: 25%;">
-        <hr size="3" width="80%" color="#c9b46d">
-       <h1>Trimite-ne un mesaj</h1>
+        <hr id="lm" size="3" width="80%" color="#c9b46d">
+       <h1 id="trimit">Trimite-ne un mesaj</h1>
             <div class="form">
         <form method="GET" action="mailto:l.cuza46@gmail.com" enctype="text/plain" >
             <div style="font-size: 20px; padding-bottom: 5px;">Subiect</div>
@@ -128,7 +128,7 @@
             <input name="E-Mail Address" />
         
             <div style="font-size: 20px; padding-bottom: 5px;">Mesajul tău</div>
-            <textarea name="Message"></textarea>
+            <textarea name="Message" id="messaj" cols="26" rows="7" placeholder="Stimată administrație"  style="font-size: 15px;"></textarea>
         
             <br/>
             <input type="submit" value="Trimite" id="button" />
@@ -165,10 +165,10 @@
 
 <div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="bine.png" width="300" height="200">
+    <img src="contact/bine.png" width="300" height="200">
   </div>
   <div class="img-comp-img img-comp-overlay">
-    <img src="rau.png" width="300" height="200">
+    <img src="contact/rau.png" width="300" height="200">
   </div>
 </div>
 
@@ -178,7 +178,7 @@ initComparisons();
     </div>
     </div>
         
-         <hr size="3" width="80%" color="#c9b46d" style="margin-top: 17%;">
+         <hr size="3" width="80%" color="#c9b46d" style="margin-top: 22%;">
     <div class="vac">
        <h1 style="margin-top: 280px;">Până la următoarea vacanță a rămas: </h1>
  <div class="vacation">
@@ -186,7 +186,7 @@ initComparisons();
     <p id="demo"></p>
 
     <script>
-    var countDownDate = new Date("Mar 6, 2023 00:0:0").getTime();
+    var countDownDate = new Date("Apr 15, 2023 00:0:0").getTime();
     
     var x = setInterval(function() {
     
@@ -213,6 +213,7 @@ initComparisons();
 </section>
  <!-- Footer -->
   
+  <footer>
  <section id="footer">
   <div class="footer container">
     <div class="brand">
@@ -230,6 +231,7 @@ initComparisons();
           <a href="mailto:l.cuza46@gmail.com">l.cuza46@gmail.com</a>
   </div>
 </section>
+  </footer>
 <!-- End Footer -->
 </body>
 </html>
