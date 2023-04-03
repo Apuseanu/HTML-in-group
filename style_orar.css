@@ -113,7 +113,7 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 30%;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -415,13 +415,14 @@ td{
 /* End Keyframes */
 
 /* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+	
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
 	}
 	h1.section-title {
-		font-size: 6rem;
+		font-size: 1800%;
 	}
 
 	/* Hero */
@@ -457,7 +458,6 @@ td{
 		height: 100%;
 	}
 	/* End Project */
-
 
 
 }
