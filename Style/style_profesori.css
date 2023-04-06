@@ -72,6 +72,10 @@ a {
 	background-color: hsl(0, 0%, 91%);
 	transition: 0.3s ease background-color;
 }
+#header img {
+	height: 40%;
+	width: 40%;
+}
 #header .nav-bar {
 	display: flex;
 	align-items: center;
@@ -84,7 +88,7 @@ a {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: #e8e8e8;
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -101,7 +105,7 @@ a {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 25px;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -358,25 +362,58 @@ h1, p{
 }
 /* End Media Query For Tablet */
 
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	/* Hero */
+	#hero h1 {
+		font-size: 7rem;
+	}
+	/* End Hero */
+
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/* End Project */
+
+
+
+}
+/* End Media Query For Tablet */
+
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
-
-	#header{
-		width: 1220px;
-	}
-
-	#faceti{
-		font-size: 50px;
-		text-align: left;
-		margin-left: 10px;
-	}
-
-	.flip-card{
-		width: 300px;
-		
-	}
-
 	#header .hamburger {
 		display: none;
 	}
@@ -398,12 +435,9 @@ h1, p{
 	}
 	/* End header */
 
-	
-
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-
 /* End  Media Query For Desktop */
