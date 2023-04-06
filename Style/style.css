@@ -81,6 +81,10 @@ p {
 	background-color: hsl(0, 0%, 91%);
 	transition: 0.3s ease background-color;
 }
+#header img {
+	height: 40%;
+	width: 40%;
+}
 #header .nav-bar {
 	display: flex;
 	align-items: center;
@@ -93,7 +97,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: #e8e8e8;
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -110,7 +114,7 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 25px;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -138,7 +142,7 @@ p {
 #header .nav-list ul li:hover a {
 	color: rgb(201, 180, 109);
 }
-#header button{
+#header .hamburger {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
@@ -153,22 +157,7 @@ p {
 	transform: scale(0.8);
 	margin-right: 20px;
 }
-/*#header .hamburger {
-	height: 60px;
-	width: 60px;
-	display: inline-block;
-	border: 3px solid white;
-	border-radius: 50%;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 100;
-	cursor: pointer;
-	transform: scale(0.8);
-	margin-right: 20px;
-}*/
-#header button:after {
+#header .hamburger:after {
 	position: absolute;
 	content: '';
 	height: 100%;
@@ -177,15 +166,15 @@ p {
 	border: 3px solid white;
 	animation: hamburger_puls 1s ease infinite;
 }
-#header button .bar {
+#header .hamburger .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
 	background-color: white;
 	z-index: -1;
 }
-#header button .bar::after,
-#header button .bar::before {
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -195,16 +184,16 @@ p {
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
-#header button .bar::after {
+#header .hamburger .bar::after {
 	top: 8px;
 }
-#header button .bar::before {
+#header .hamburger .bar::before {
 	bottom: 8px;
 }
-#header button.active .bar::before {
+#header .hamburger.active .bar::before {
 	bottom: 0;
 }
-#header button.active .bar::after {
+#header .hamburger.active .bar::after {
 	top: 0;
 }
 /* End Header section */
@@ -457,9 +446,9 @@ p {
 	margin-left: 0px;
   }
   
-  @media screen and (min-width: 1200px) {
+ /* @media screen and (max-width: 900px) {
 	.slider img{
-	  width: calc(100% / 3);
+	  width: calc(100% / 2);
 	}
   }
   
@@ -467,7 +456,7 @@ p {
 	.slider img{
 	  width: 100%;
 	}
-  }
+  }*/
 
 /*End Slider*/
 
@@ -582,13 +571,14 @@ p {
 	/* End Project */
 
 
+
 }
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
-	#header button {
+	#header .hamburger {
 		display: none;
 	}
 	#header .nav-list ul {
