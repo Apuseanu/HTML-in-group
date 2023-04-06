@@ -361,10 +361,7 @@ h1, p{
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
-	html{
-		background-color: aqua;
-	}
-	
+
 	#header{
 		width: 1220px;
 	}
